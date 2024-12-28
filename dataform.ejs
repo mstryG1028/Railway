@@ -1,0 +1,52 @@
+<% layout("/layouts/boilerplate") %> 
+
+<body>
+    <heading><h3 style="margin-left: 170px; margin-top: 20px;">Add Data</h3></heading>
+    <div class="form" style="height: 950px;">
+        <form action="/home/dataform" method="POST">
+           <div class="mb-3">
+           <label for="unitNo" class="form-label"><h7>Unit No</h7></label>
+           <input type="number" class="form-control"  aria-describedby="number" name="unitNo" placeholder="UnitNo" style="box-shadow: 2px 1px 2px 1px grey;">
+         </div>
+         <div class="mb-3">
+            <label for="CoachNo" class="form-label"><h7>Coach No</h7></label>
+            <input type="number" class="form-control"  aria-describedby="number" name="coachNo" placeholder="CoachNo" style="box-shadow: 2px 1px 2px 1px grey;">
+          </div>
+          <div class="mb-3">
+            <label for="coachType" class="form-label"><h7>Coach Type</h7></label>
+            <input type="text" class="form-control"  aria-describedby="text" name="coachType" placeholder="CoachType" style="box-shadow: 2px 1px 2px 1px grey;">
+          </div>
+           <div class="mb-3">
+            <label for="Commisiondate" class="form-label"><h7>Commision Date</h7></label>
+            <input type="date" class="form-control"  aria-describedby="date" name="commisionDate" placeholder="Commision Date" style="box-shadow: 2px 1px 2px 1px grey;">
+          </div>
+          <div class="mb-3">
+            <label for="POHDate" class="form-label"><h7>POH Date</h7></label>
+            <input type="date" class="form-control"  aria-describedby="date" name="POHDate" placeholder="poh Date" style="box-shadow: 2px 1px 2px 1px grey;">
+          </div>
+          <div class="mb-3">
+            <label for="IADate" class="form-label"><h7>IA Date</h7></label>
+            <input type="date" class="form-control"  aria-describedby="date" name="IADate" placeholder="IA Date" style="box-shadow: 2px 1px 2px 1px grey;">
+          </div>
+          <div class="mb-3">
+            <label for="TIDate" class="form-label"><h7>TI Date</h7></label>
+            <input type="date" class="form-control"  aria-describedby="date" name="TIDate" placeholder="TI Date" style="box-shadow: 2px 1px 2px 1px grey;">
+          </div>
+          <div class="mb-3">
+            <label for="ICDate" class="form-label"><h7>IC Date</h7></label>
+            <input type="Date" class="form-control"  aria-describedby="Date" name="ICDate" placeholder="IC Date" style="box-shadow: 2px 1px 2px 1px grey;">
+          </div>
+          <div class="mb-3">
+            <label for="USTDate" class="form-label"><h7>UST Date</h7></label>
+            <input type="Date" class="form-control"  aria-describedby="Date" name="USTDate" placeholder="UST Date" style="box-shadow: 2px 1px 2px 1px grey;">
+          </div>
+          <div class="mb-3">
+            <label for="WashingDate" class="form-label"><h7>Washing Date</h7></label>
+            <input type="Date" class="form-control"  aria-describedby="Date" name="WashingDate" placeholder="Washing Date" style="box-shadow: 2px 1px 2px 1px grey;">
+          </div> 
+        
+         <button type="submit" class="btn btn-primary " value="register" style="margin-left: 70px; width: 200px;">Submit</button>
+       </form>
+       
+       </div>
+</body>

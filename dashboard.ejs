@@ -1,0 +1,60 @@
+<% layout("/layouts/boilerplate") %> 
+
+<body>
+    <div class="dashboard-box">
+        <div class="logo-box">
+            <img src="/images/user.webp">
+        </div>
+
+        <div class="dashboard-username-box">
+            <h3>
+                Deepak
+            </h3>
+        </div>
+        <hr>
+        <div class="links-box" >
+            <ul>
+                <li><a href="">Rake Master</a></li>
+                <li><a href="">Rake Holding</a></li>
+                <li><a href="">Rake Outing</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="table-box">
+        <table>
+            <tr>
+
+                <td class="heading">Unit no</td>
+                <td class="heading">Coach no</td>
+                <td class="heading">Coach Type</td>
+                <td class="heading">Commision Date</td>
+                <td class="heading">POH Date</td>
+                <td class="heading"> IA</td>
+                <td class="heading">TI</td>
+                <td class="heading">IC</td>
+                <td class="heading">UST</td>
+                <td class="heading">WASHING</td>
+            </tr>
+            
+            <% data.forEach(function(item) { %>
+                <tr>
+                    <td><%= item.unitNo %></td>
+                    <td><%= item.coachNo %></td>
+                    <td><%= item.coachType %></td>
+                    <td><%= item.commisionDate.toLocaleDateString('en-IN')%></td>
+                    <td><%= item.POHDate.toLocaleDateString('en-IN') %></td>
+                    <td><%= item.IADate.toLocaleDateString('en-IN')%></td>
+                    <td><%= item.TIDate.toLocaleDateString('en-IN') %></td>
+                    <td><%= item.ICDate.toLocaleDateString('en-IN') %></td>
+                    <td><%= item.USTDate.toLocaleDateString('en-IN') %></td>
+                    <td><%= item.WashingDate.toLocaleDateString('en-IN') %></td>
+                </tr>
+            <% }); %>
+
+            
+            
+        </table>
+        <a href="/home/dataform" class="dash-btn"><button class=" btn btn-primary" >Add Data</button></a>
+    </div>
+</body>

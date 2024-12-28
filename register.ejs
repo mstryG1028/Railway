@@ -1,0 +1,39 @@
+<% layout("/layouts/boilerplate") %> 
+
+<body>
+  
+  <div class="form" style="height: 650px;">
+        <form action="/home/register" method="POST">
+           <div class="mb-3">
+           <label for="firstname" class="form-label"><h7>firstname</h7></label>
+           <input type="text" class="form-control" id="exampleInputfirstname" aria-describedby="text" name="firstname" placeholder="firstname" style="box-shadow: 2px 1px 2px 1px grey;">
+         </div>
+         <div class="mb-3">
+           <label for="Lastname" class="form-label"><h7>Last name</h7> </label>
+           <input type="text" class="form-control" id="exampleInputlastname" aria-describedby="text" name="lastname" placeholder="lastname"style="box-shadow: 2px 1px 2px 1px grey;">
+         </div>
+         <div class="mb-3">
+           <label for="exampleInputEmail1" class="form-label"><h7>Email address</h7></label>
+           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="email"style="box-shadow: 2px 1px 2px 1px grey;">
+         </div>
+         <div class="mb-3">
+           <label for="Phone" class="form-label"><h7>Phone</h7></label>
+           <input type="number" class="form-control" id="exampleInputphone" aria-describedby="phoneHelp" name="phone" placeholder="phone"style="box-shadow: 2px 1px 2px 1px grey;">
+         </div>
+       
+         <div class="mb-3">
+           <label for="Password" class="form-label"><h7>Password</h7></label>
+           <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="password"style="box-shadow: 2px 1px 2px 1px grey;">
+         </div>
+           <div class="mb-3">
+           <label for="Password" class="form-label"> <h7>Confirm Password</h7></label>
+           <input type="password" class="form-control" id="exampleInputPassword1" name="confirmpassword" placeholder="confirm password"style="box-shadow: 2px 1px 2px 1px grey;">
+         </div>
+       
+         <button type="submit" class="btn btn-primary " value="register" style="margin-left: 70px; width: 200px;">Submit</button>
+       </form>
+       
+       </div>
+</body>
+
+    
